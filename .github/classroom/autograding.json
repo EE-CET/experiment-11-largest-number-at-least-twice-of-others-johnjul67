@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Example 1 (Success)",
+      "setup": "javac src/LargestTwice.java",
+      "run": "java -cp src LargestTwice",
+      "input": "4\n3 6 1 0",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Example 2 (Failure)",
+      "setup": "javac src/LargestTwice.java",
+      "run": "java -cp src LargestTwice",
+      "input": "4\n1 2 3 4",
+      "output": "-1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Single Element (Trivial Success)",
+      "setup": "javac src/LargestTwice.java",
+      "run": "java -cp src LargestTwice",
+      "input": "1\n100",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Boundary Case (Exact Twice)",
+      "setup": "javac src/LargestTwice.java",
+      "run": "java -cp src LargestTwice",
+      "input": "3\n5 10 2",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Larger Array (Failure)",
+      "setup": "javac src/LargestTwice.java",
+      "run": "java -cp src LargestTwice",
+      "input": "5\n10 20 50 100 60",
+      "output": "-1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
